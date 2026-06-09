@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="resource_calendar_football_flex" model="resource.calendar">
+            <field name="name">Flexible Hours</field>
+            <field name="flexible_hours" eval="True"/>
+        </record>
+    </data>
+</odoo>

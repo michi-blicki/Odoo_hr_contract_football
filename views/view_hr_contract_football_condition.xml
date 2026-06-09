@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_hr_contract_football_condition_list" model="ir.ui.view">
+            <field name="name">hr.contract.football.condition.list</field>
+            <field name="model">hr.contract.football.condition</field>
+            <field name="arch" type="xml">
+                <list string="Football Contract Conditions">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="sequence" />
+                    <field name="active"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_hr_contract_football_condition_kanban" model="ir.ui.view">
+            <field name="name">hr.contract.football.condition.kanban</field>
+            <field name="model">hr.contract.football.condition</field>
+            <field name="arch" type="xml">
+                <kanban string="Football Contract Conditions" 
+                        class="o_kanban_small_column"
+                        default_group_by="type"
+                        default_order="sequence, name" 
+                        group_create="false" 
+                        group_delete="false" 
+                        group_edit="false">
+                    <field name="name" />
+                    <field name="type"/>
+                    <templates>
+                        <t t-name="card">
+                            <div class="oe_kanban_global_click">
+                                <div class="oe_kanban_details">
+                                    <div class="o_kanban_record_top mb-0">
+                                        <strong class="o_kanban_record_title"><field name="name"/></strong>
+                                        <field name="active" widget="boolean_toggle"/>
+                                    </div>
+                                    <div class="o_kanban_record_bottom">
+                                        <div class="oe_kanban_bottom_left">
+                                            <div><label for="type" class="me-1">Condition Type:</label><field name="type"/></div>
+                                            <div><label for="sequence" class="me-1">Sequence:</label><field name="sequence"/></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="view_hr_contract_football_condition_form" model="ir.ui.view">
+            <field name="name">hr.contract.football.condition.form</field>
+            <field name="model">hr.contract.football.condition</field>
+            <field name="arch" type="xml">
+                <form string="Football Contract Condition">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                                <span class="ml-2" invisible="active == True">
+                                    (<span style="color:red;">Archived</span>)
+                                </span>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                            <field name="type"/>
+                        </group>
+                        <separator string="Condition Text"/>
+                        <group>
+                            <field name="text" widget="html"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hr_contract_football_condition_search" model="ir.ui.view">
+            <field name="name">hr.contract.football.condition.search</field>
+            <field name="model">hr.contract.football.condition</field>
+            <field name="arch" type="xml">
+                <search string="Football Contract Conditions">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <filter name="type" string="Condition Type" domain="[]" context="{'group_by': 'type'}"/>
+                    <filter name="active" string="Active" domain="[('active', '=', True)]"/>
+                    <filter name="inactive" string="Inactive" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="hr_contract_football_condition_action" model="ir.actions.act_window">
+            <field name="name">Football Contract Conditions</field>
+            <field name="res_model">hr.contract.football.condition</field>
+            <field name="view_mode">kanban,list,form</field>
+            <field name="view_ids" eval="[
+                (5,0),
+                (0, 0, {'view_mode': 'kanban', 'view_id': ref('view_hr_contract_football_condition_kanban')}),
+                (0, 0, {'view_mode': 'list', 'view_id': ref('view_hr_contract_football_condition_list')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('view_hr_contract_football_condition_form')}),
+            ]"/>
+            <field name="search_view_id" ref="view_hr_contract_football_condition_search"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create and manage football contract conditions here. These conditions can be linked to football contracts and will be displayed in the contract form.
+                </p>
+            </field>
+        </record>
+
+        <menuitem
+            id="menu_hr_contract_football_condition"
+            name="Football Contract Conditions"
+            action="hr_contract_football_condition_action"
+            groups="hr_contract.group_hr_contract_manager"
+            parent="hr_contract.menu_human_resources_configuration_contract"
+            sequence="30"/>
+
+    </data>
+</odoo>

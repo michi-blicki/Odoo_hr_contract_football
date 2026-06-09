@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+    <record id="view_hr_contract_form_football" model="ir.ui.view">
+      <field name="name">hr.contract.form.football</field>
+      <field name="model">hr.contract</field>
+      <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//notebook" position="inside">
+          <page name="football_general" string="Football Contract">
+            <group>
+              <group>
+                <field name="contract_runtime"/>
+                <field name="contract_optional_extension"/>
+                <field name="transfer_type"/>
+                <field name="termination_clause_type"/>
+              </group>
+              <group>
+                <field name="signing_fee_pay_date"/>
+                <field name="loyalty_bonus_pay_date"/>
+              </group>
+            </group>
+          </page>
+
+          <page name="football_monetary" string="Football Monetary Terms">
+            <group>
+              <separator string="Fixed Payments"/>
+              <group>
+                <field name="signing_fee"/>
+                <field name="termination_amount"/>
+                <field name="loyalty_bonus"/>
+              </group>
+              <group>
+                <field name="release_clause_amount"/>
+                <field name="buyout_clause_amount"/>
+                <field name="sponsorship_bonus"/>
+              </group>
+              <separator string="Variable Payments"/>
+              <group>
+                <field name="trainer_title_bonus"/>
+                <field name="trainer_position_bonus"/>
+                <field name="trainer_retention_bonus"/>
+                <field name="training_appearance_bonus"/>
+                <field name="training_traintime_bonus"/>
+              </group>
+              <group>
+                <field name="game_appearance_bonus"/>
+                <field name="game_playtime_bonus"/>
+                <field name="goal_bonus"/>
+                <field name="clean_sheet_bonus"/>
+                <field name="team_success_bonus"/>
+                <field name="red_card_penalty"/>
+                <field name="yellow_card_penalty"/>
+              </group>
+            </group>
+          </page>
+
+          <page name="football_conditions" string="Football Conditions">
+            <group>
+              <group>
+                <field name="loan_return_conditions"/>
+                <field name="loan_return_conditions_custom" widget="html"/>
+              </group>
+              <group>
+                <field name="sponsorship_conditions"/>
+                <field name="sponsorship_conditions_custom" widget="html"/>
+              </group>
+              <group>
+                <field name="trainer_title_condition"/>
+                <field name="trainer_title_condition_custom" widget="html"/>
+              </group>
+              <group>
+                <field name="trainer_position_condition"/>
+                <field name="trainer_position_condition_custom" widget="html"/>
+              </group>
+              <group>
+                <field name="trainer_retention_condition"/>
+                <field name="trainer_retention_condition_custom" widget="html"/>
+              </group>
+              <group>
+                <field name="trainer_side_jobs_conditions"/>
+                <field name="trainer_side_jobs_conditions_custom" widget="html"/>
+              </group>
+              <group>
+                <field name="termination_variable_condition" invisible="termination_clause_type != 'variable'"/>
+                <field name="termination_variable_condition_custom" invisible="termination_clause_type != 'variable'" widget="html"/>
+              </group>
+            </group>
+          </page>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,421 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_contract_football
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 06:51+0000\n"
+"PO-Revision-Date: 2026-06-09 09:08+0200\n"
+"Last-Translator: Michael Blickenstorfer <michi@blicki.ch>\n"
+"Language-Team: \n"
+"Language: de_CH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: hr_contract_football
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_form
+msgid ""
+"<span class=\"ml-2\" invisible=\"active == True\">\n"
+"                                    (<span style=\"color:red;\">Archived</"
+"span>)\n"
+"                                </span>"
+msgstr ""
+"<span class=\"ml-2\" invisible=\"active == True\">\r\n"
+"                                    (<span style=\"color:red;\">Archiviert</"
+"span>)\r\n"
+"                                </span>"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__active
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_search
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__buyout_clause_amount
+msgid "Buyout Clause Amount"
+msgstr "Höhe der Ablösesumme"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__clean_sheet_bonus
+msgid "Clean Sheet Bonus"
+msgstr "Weisse-Weste Prämie"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__name
+msgid "Condition Name"
+msgstr "Name der Bedingung"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__text
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_form
+msgid "Condition Text"
+msgstr "Text der Bedingung"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__type
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_search
+msgid "Condition Type"
+msgstr "Bedingungstyp"
+
+#. module: hr_contract_football
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_kanban
+msgid "Condition Type:"
+msgstr "Bedingungstyp:"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__contract_optional_extension
+msgid "Contract Optional Extension (years)"
+msgstr "Optionale Vertragsverlängerung (Jahre)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__contract_runtime
+msgid "Contract Runtime (years)"
+msgstr "Vertragslaufzeit (Jahre)"
+
+#. module: hr_contract_football
+#: model_terms:ir.actions.act_window,help:hr_contract_football.hr_contract_football_condition_action
+msgid ""
+"Create and manage football contract conditions here. These conditions can be "
+"linked to football contracts and will be displayed in the contract form."
+msgstr ""
+"Erstellen und verwalten Sie hier Fussball-Vertragsbedingungen. Diese "
+"Bedingungen können mit Fussballverträgen verknüpft und im Vertragsformular "
+"angezeigt werden."
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: hr_contract_football
+#: model:ir.model,name:hr_contract_football.model_hr_contract
+msgid "Employee Contract"
+msgstr "Mitarbeitervertrag"
+
+#. module: hr_contract_football
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract__termination_clause_type__fixed
+msgid "Fixed"
+msgstr "Fix"
+
+#. module: hr_contract_football
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_form_football
+msgid "Fixed Payments"
+msgstr "Fixe Zahlungen"
+
+#. module: hr_contract_football
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_form_football
+msgid "Football Conditions"
+msgstr "Fussball-Bedingungen"
+
+#. module: hr_contract_football
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_form_football
+msgid "Football Contract"
+msgstr "Fussball-Vertrag"
+
+#. module: hr_contract_football
+#: model:ir.model,name:hr_contract_football.model_hr_contract_football_condition
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_form
+msgid "Football Contract Condition"
+msgstr "Fussball-Vertragsbedingung"
+
+#. module: hr_contract_football
+#: model:ir.actions.act_window,name:hr_contract_football.hr_contract_football_condition_action
+#: model:ir.ui.menu,name:hr_contract_football.menu_hr_contract_football_condition
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_kanban
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_list
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_search
+msgid "Football Contract Conditions"
+msgstr "Fussball Vertragsbedingungen"
+
+#. module: hr_contract_football
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_form_football
+msgid "Football Monetary Terms"
+msgstr "Fussballspezifische Finanzbedingungen"
+
+#. module: hr_contract_football
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract__transfer_type__free_transfer
+msgid "Free Transfer"
+msgstr "Freier Transfer"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__game_appearance_bonus
+msgid "Game Appearance Bonus"
+msgstr "Bonus Spielanwesenheit"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__game_playtime_bonus
+msgid "Game Playtime Bonus (minutes)"
+msgstr "Bonus Spielzeit (Minuten)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__goal_bonus
+msgid "Goal Bonus"
+msgstr "Tor-Bonus"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_contract_football
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_search
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: hr_contract_football
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract__transfer_type__loan
+msgid "Loan"
+msgstr "Leihe"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__loan_conditions
+msgid "Loan Conditions"
+msgstr "Ausleih-Bedingungen"
+
+#. module: hr_contract_football
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract_football_condition__type__loan_return
+msgid "Loan Return Condition"
+msgstr "Ausleih-Rückkehr-Bedingung"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__loan_return_conditions
+msgid "Loan Return Conditions"
+msgstr "Ausleih-Rückkehr Bedingungen"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__loan_return_conditions_custom
+msgid "Loan Return Custom Conditions"
+msgstr "Ausleih-Rückkehr Bedingungen (spezifisch)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__loyalty_bonus
+msgid "Loyalty Bonus"
+msgstr "Loyalitätsbonus"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__loyalty_bonus_pay_date
+msgid "Loyalty Bonus Pay Date"
+msgstr "Loyalitätsbonus - Auszahlungsdatum"
+
+#. module: hr_contract_football
+#. odoo-python
+#: code:addons/hr_contract_football/models/hr_contract.py:0
+msgid ""
+"Loyalty Bonus Pay Date is required when Loyalty Bonus is greater than zero."
+msgstr ""
+"Das Auszahlungsdatum für den Loyalitätsbonus is erforderlich, wenn "
+"Loyalitätsbonus grösser als 0 ist."
+
+#. module: hr_contract_football
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract__transfer_type__purchase
+msgid "Purchase"
+msgstr "Einkauf"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__red_card_penalty
+msgid "Red Card Penalty (each)"
+msgstr "Strafe für rote Karte (pro Karte)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__release_clause_amount
+msgid "Release Clause Amount"
+msgstr "Betragshöhe der Ausstiegsklausel"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract_football_condition__sequence
+msgid "Sequence"
+msgstr "Sequenz"
+
+#. module: hr_contract_football
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_football_condition_kanban
+msgid "Sequence:"
+msgstr "Sequenz:"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__signing_fee
+msgid "Signing Fee"
+msgstr "Unterzeichnungsprämie"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__signing_fee_pay_date
+msgid "Signing Fee Pay Date"
+msgstr "Auszahlungsdatum der Unterzeichnungsprämie"
+
+#. module: hr_contract_football
+#. odoo-python
+#: code:addons/hr_contract_football/models/hr_contract.py:0
+msgid "Signing Fee Pay Date is required when Signing Fee is greater than zero."
+msgstr ""
+"Das Auszahlungsdatum der Unterzeichnungsprämie ist erforderlich, wenn die "
+"Auszahlungsprämie höher 0 ist."
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__sponsorship_bonus
+msgid "Sponsorship Bonus"
+msgstr "Sponsoring-Bonus"
+
+#. module: hr_contract_football
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract_football_condition__type__sponsorship
+msgid "Sponsorship Condition"
+msgstr "Sponsoring-Bedingung"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__sponsorship_conditions
+msgid "Sponsorship Conditions"
+msgstr "Sponsoring-Bedingungen"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__sponsorship_conditions_custom
+msgid "Sponsorship Custom Conditions"
+msgstr "Sponsoring-Bedingungen (spezifisch)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__team_success_bonus
+msgid "Team Success Bonus"
+msgstr "Teamerfolgsbonus"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__termination_amount
+msgid "Termination Amount"
+msgstr "Abfindungssumme"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__termination_clause_type
+msgid "Termination Clause Type"
+msgstr "Abfindungsbedingungstyp"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__termination_variable_condition
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract_football_condition__type__termination_variable
+msgid "Termination Variable Condition"
+msgstr "Abfindungsbedingung bei variablen Verträgen"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__termination_variable_condition_custom
+msgid "Termination Variable Condition Custom Text"
+msgstr "Abfindungsbedingung bei variablen Verträgen (spezifisch)"
+
+#. module: hr_contract_football
+#. odoo-python
+#: code:addons/hr_contract_football/models/hr_contract.py:0
+msgid "The field '%s' must be zero or greater."
+msgstr "Das Feld '%s' muss 0 oder grösser sein."
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_position_bonus
+msgid "Trainer Position Bonus"
+msgstr "Trainer: Bonus für Tabellenposition"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_position_condition
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract_football_condition__type__trainer_position
+msgid "Trainer Position Condition"
+msgstr "Trainer: Bedingung für Tabellenposition"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_position_condition_custom
+msgid "Trainer Position Custom Conditions"
+msgstr "Trainer: Bedingung für Tabellenposition (spezifisch)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_retention_bonus
+msgid "Trainer Retention Bonus"
+msgstr "Trainer: Treueprämie"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_retention_condition
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract_football_condition__type__trainer_retention
+msgid "Trainer Retention Condition"
+msgstr "Trainer: Treueprämie - Bedingungen"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_retention_condition_custom
+msgid "Trainer Retention Custom Conditions"
+msgstr "Trainer: Treueprämie - Bedingungen (spezifisch)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract_football_condition__type__trainer_side_jobs
+msgid "Trainer Side Jobs Condition"
+msgstr "Trainer: Zweitjobs - Bedingung"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_side_jobs_conditions
+msgid "Trainer Side Jobs Conditions"
+msgstr "Trainer: Zweitjobs - Bedingungen "
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_side_jobs_conditions_custom
+msgid "Trainer Side Jobs Custom Conditions"
+msgstr "Trainer: Zweitjobs - Bedingungen (spezifisch)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_title_bonus
+msgid "Trainer Title Bonus"
+msgstr "Trainer: Titelbonus"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_title_condition
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract_football_condition__type__trainer_title
+msgid "Trainer Title Condition"
+msgstr "Trainer: Titelbonus - Bedingung"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__trainer_title_condition_custom
+msgid "Trainer Title Custom Conditions"
+msgstr "Trainer: Titelbonus - Bedingungen (spezifisch)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__training_appearance_bonus
+msgid "Training Appearance Bonus"
+msgstr "Trainingsbesuch Bonus"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__training_traintime_bonus
+msgid "Training Traintime Bonus (minutes)"
+msgstr "Trainingsbesuch Bonus (pro Minute)"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__transfer_type
+msgid "Transfer Type"
+msgstr "Transfertyp"
+
+#. module: hr_contract_football
+#: model:ir.model.fields.selection,name:hr_contract_football.selection__hr_contract__termination_clause_type__variable
+msgid "Variable"
+msgstr "Variabel"
+
+#. module: hr_contract_football
+#: model_terms:ir.ui.view,arch_db:hr_contract_football.view_hr_contract_form_football
+msgid "Variable Payments"
+msgstr "Variable Auszahlungen"
+
+#. module: hr_contract_football
+#: model:ir.model.fields,field_description:hr_contract_football.field_hr_contract__yellow_card_penalty
+msgid "Yellow Card Penalty (each)"
+msgstr "Strafe für gelbe Karte (jede Karte)"
