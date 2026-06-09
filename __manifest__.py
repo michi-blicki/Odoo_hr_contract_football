@@ -37,8 +37,8 @@ Football icon of Odoo HR Contract Football module by https://www.flaticon.com/de
 
     #
     # Hooks
-    'pre_init_hook': 'pre_init_hook',
-    'post_init_hook': 'post_init_hook',
-    'uninstall_hook': 'uninstall_hook',
+    #'pre_init_hook': 'pre_init_hook',
+    #'post_init_hook': 'post_init_hook',
+    #'uninstall_hook': 'uninstall_hook',
 }
 
